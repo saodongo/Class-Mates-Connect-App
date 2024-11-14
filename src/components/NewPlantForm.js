@@ -24,12 +24,12 @@ function NewPlantForm({ addPlant }) {
 
   return (
     <div className="new-plant-form">
-      <h2>New Plant</h2>
+      <h2></h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
-          placeholder="Plant name"
+          placeholder="Pet name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -46,12 +46,12 @@ function NewPlantForm({ addPlant }) {
           type="number"
           name="price"
           step="0.01"
-          placeholder="Price"
+          placeholder="description"
           value={formData.price}
           onChange={handleChange}
           required
         />
-        <button type="submit">Add Plant</button>
+        <button type="submit">Add Pets</button>
       </form>
     </div>
   );

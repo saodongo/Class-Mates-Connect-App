@@ -1,5 +1,5 @@
 :root {
-  --green: rgb(39, 189, 39);
+  --blue: rgb(161, 103, 67);
 }
 
 * {
@@ -24,8 +24,8 @@ button {
 }
 
 button.primary {
-  background-color: var(--green);
-  color: white;
+  background-color: var(--blue);
+  color: blue;
 }
 
 .app {
@@ -44,7 +44,7 @@ header h1 {
   font-size: 1.25em;
   padding-left: 0.5rem;
   color: transparent;
-  text-shadow: 0 0 0 var(--green);
+  text-shadow: 0 0 0 var(--blue);
 }
 
 main {
@@ -54,7 +54,7 @@ main {
 .new-plant-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
+  background-color: rgba(250, 181, 183, 0.5);
 }
 
 .new-plant-form form {
@@ -73,13 +73,13 @@ main {
 
 .searchbar {
   padding: 1rem;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
 label {
   font-weight: bold;
-  display: block;
+  display: none;
 }
 
 input {
@@ -87,7 +87,7 @@ input {
   border: none;
   font-family: inherit;
   font-size: 1.2em;
-  border-bottom: 2px solid gray;
+  border-bottom: none;
   transition: all 0.2s;
   width: 100%;
 }
@@ -110,7 +110,7 @@ input:focus {
 }
 
 .card button {
-  margin-top: 0.5rem;
+  margin-top: none;
 }
 
 @media (min-width: 768px) {
