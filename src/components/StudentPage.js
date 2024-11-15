@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import NewPlantForm from "./NewPlantForm";
-import PlantList from "./PlantList";
+import NewPlantForm from "./NewStudentForm";
+import PlantList from "./StudentList";
 import Search from "./Search";
 
-function PlantPage() {
+function StudentPage() {
   const [plants, setPlants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -38,4 +38,4 @@ function PlantPage() {
   );
 }
 
-export default PlantPage;
+export default StudentPage;

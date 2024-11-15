@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewPlantForm({ addPlant }) {
+function NewStudentForm({ addStudent }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -14,16 +14,16 @@ function NewPlantForm({ addPlant }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newPlant = {
+    const newStudent = {
       ...formData,
       price: formData.price
     };
-    addPlant(newPlant);
+    addStudent(NewStudentForm);
     setFormData({ name: "", image: "", price: "" });
   };
 
   return (
-    <div className="new-plant-form">
+    <div className="new-student-form">
       <h2></h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -57,4 +57,4 @@ function NewPlantForm({ addPlant }) {
   );
 }
 
-export default NewPlantForm;
+export default NewStudentForm;
