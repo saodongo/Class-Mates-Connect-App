@@ -1,5 +1,5 @@
 import React from "react";
-import PlantCard from "./StudentCard";
+
 import StudentCard from "./StudentCard";
 
 function StudentList({ plants }) {
