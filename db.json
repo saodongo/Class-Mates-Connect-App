@@ -13,22 +13,11 @@
       "Age": "24"
     },
     {
-      "id": "3",
-      "name": "Andrew",
-      "image": "https://i.pinimg.com/474x/7e/54/eb/7e54eb0da4a3b1a80e5bead21fdf1b4b.jpg",
-      "Age": "24"
-    },
-    {
-      "id": "4",
-      "name": "Racheal",
-      "image": "https://i.pinimg.com/474x/79/9e/4c/799e4cc7254ad159e2b113bba768aa51.jpg",
-      "Age": "22"
-    },
-    {
       "id": "5",
       "name": "Irine",
       "image": "https://i.pinimg.com/474x/10/61/53/106153eb4bbf98100c764207586253b2.jpg",
-      "Age": "25"
+      "Age": "25",
+      "age": "44"
     },
     {
       "id": "6",
@@ -43,17 +32,16 @@
       "Age": "23"
     },
     {
-      "id": "a852",
-      "name": "Macdonald",
-      "image": "https://i.pinimg.com/474x/52/a3/f5/52a3f515950ecdcfc0519e2f8eaa62ff.jpg",
-      "price": "",
-      "Age": "30"
-    },
-    {
       "id": "7044",
       "name": "Sharon ",
       "image": "https://i.pinimg.com/474x/6e/2f/b9/6e2fb9ae888fb107a33fbade162702ff.jpg",
-      "age": "10"
+      "age": "50"
+    },
+    {
+      "id": "2c8a",
+      "name": "Patricia",
+      "image": "https://i.pinimg.com/474x/04/44/5c/04445c1f9c106f18ca231f61c384c0dc.jpg",
+      "age": "50"
     }
   ]
 }
