@@ -29,7 +29,7 @@ function NewPlantForm({ addPlant }) {
         <input
           type="text"
           name="name"
-          placeholder="class Mate Name"
+          placeholder="New Name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -43,15 +43,15 @@ function NewPlantForm({ addPlant }) {
           required
         />
         <input
-          type="male"
+          type="number"
           name="Age"
-          step="0.01"
+        
           placeholder="Age"
           value={formData.Age}
           onChange={handleChange}
           required
         />
-        <button type="submit">Add Names</button>
+        <button type="submit">Add Name</button>
       </form>
     </div>
   );

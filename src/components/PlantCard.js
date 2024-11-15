@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function PlantCard({ plant, onDeletePlant, onUpdateAge }) {
-  const [outOfStock, setOutOfStock] = useState(false);
+  const [NotAvailable, setNotAvailable] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
     id: plant.id,
@@ -11,7 +11,7 @@ function PlantCard({ plant, onDeletePlant, onUpdateAge }) {
   });
 
   function handleToggleAvailability() {
-    setOutOfStock(!outOfStock);
+    setNotAvailable(!NotAvailable);
   }
 
   function handleDelete() {
@@ -95,8 +95,8 @@ function PlantCard({ plant, onDeletePlant, onUpdateAge }) {
         <>
           <h4>{plant.id} {plant.name}</h4>
           <p>Age: {plant.age}</p>
-          <button onClick={handleToggleAvailability} className={outOfStock ? "" : "primary"}>
-            {outOfStock ? "Out of Stock" : "Available"}
+          <button onClick={handleToggleAvailability} className={NotAvailable ? "" : "primary"}>
+            {NotAvailable ? "Not Available" : "Available"}
           </button>
           <button onClick={handleEditClick} className="edit-button">
             Edit
