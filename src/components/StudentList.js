@@ -1,14 +1,16 @@
 import React from "react";
-
 import StudentCard from "./StudentCard";
 
-function StudentList({ plants }) {
+function StudentList({ students, onDeleteStudent, onUpdateStudent }) {
   return (
     <ul className="cards">
-      {plants.map((plant) => (
-        plant && <StudentCard plant={plant} />
-
-
+      {students.map((student) => (
+        <StudentCard
+          key={student.id}
+          student={student}
+          onDeleteStudent={onDeleteStudent}
+          onUpdateStudent={onUpdateStudent}
+        />
       ))}
     </ul>
   );

@@ -4,7 +4,7 @@ function NewStudentForm({ addStudent }) {
   const [formData, setFormData] = useState({
     name: "",
     image: "",
-    price: "",
+    age: "",
   });
 
   const handleChange = (e) => {
@@ -14,22 +14,18 @@ function NewStudentForm({ addStudent }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newStudent = {
-      ...formData,
-      price: formData.price
-    };
-    addStudent(NewStudentForm);
-    setFormData({ name: "", image: "", price: "" });
+    addStudent(formData);
+    setFormData({ name: "", image: "", age: "" });
   };
 
   return (
     <div className="new-student-form">
-      <h2></h2>
+      <h2>Add New Classmate</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
-          placeholder="New Name"
+          placeholder="Name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -44,14 +40,13 @@ function NewStudentForm({ addStudent }) {
         />
         <input
           type="number"
-          name="Age"
-        
+          name="age"
           placeholder="Age"
-          value={formData.Age}
+          value={formData.age}
           onChange={handleChange}
           required
         />
-        <button type="submit">Add Name</button>
+        <button type="submit">Add Classmate</button>
       </form>
     </div>
   );

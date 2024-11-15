@@ -5,11 +5,11 @@ function Search({ setSearchTerm }) {
 
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search A name:</label>
+      <label htmlFor="search">Search a Classmate:</label>
       <input
         type="text"
         id="search"
-        placeholder="Type a  name to search..."
+        placeholder="Type a name to search..."
         onChange={handleSearch}
       />
     </div>

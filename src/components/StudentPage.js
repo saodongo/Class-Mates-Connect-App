@@ -1,39 +1,63 @@
 import React, { useState, useEffect } from "react";
-import NewPlantForm from "./NewStudentForm";
-import PlantList from "./StudentList";
+import NewStudentForm from "./NewStudentForm";
+import StudentList from "./StudentList";
 import Search from "./Search";
 
 function StudentPage() {
-  const [plants, setPlants] = useState([]);
+  const [students, setStudents] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Fetch plants from the JSON server
   useEffect(() => {
     fetch("http://localhost:3000/Class Mates")
       .then((response) => response.json())
-      .then((data) => setPlants(data));
+      .then((data) => setStudents(data));
   }, []);
 
-  // Add new plant to the server and state
-  const addPlant = (newPlant) => {
+  const addStudent = (newStudent) => {
     fetch("http://localhost:3000/Class Mates", {
       method: "POST",
-      headers: { "Content-Type": "Application/JSON" },
-      body: JSON.stringify(newPlant),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newStudent),
     })
       .then((response) => response.json())
-      .then((plant) => setPlants([...plants, plant]));
+      .then((student) => setStudents([...students, student]));
   };
 
-  const filteredPlants = plants.filter((plant) =>
-    plant.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const updateStudent = (updatedStudent) => {
+    fetch(`http://localhost:3000/Class Mates/${updatedStudent.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedStudent),
+    })
+      .then((response) => response.json())
+      .then(() =>
+        setStudents(
+          students.map((student) =>
+            student.id === updatedStudent.id ? updatedStudent : student
+          )
+        )
+      );
+  };
+
+  const deleteStudent = (id) => {
+    fetch(`http://localhost:3000/Class Mates/${id}`, {
+      method: "DELETE",
+    }).then(() => setStudents(students.filter((student) => student.id !== id)));
+  };
+
+  const filteredStudents = students.filter((student) =>
+    student.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <main>
-      <NewPlantForm addPlant={addPlant} />
+      <NewStudentForm addStudent={addStudent} />
       <Search setSearchTerm={setSearchTerm} />
-      <PlantList plants={filteredPlants} />
+      <StudentList
+        students={filteredStudents}
+        onDeleteStudent={deleteStudent}
+        onUpdateStudent={updateStudent}
+      />
     </main>
   );
 }

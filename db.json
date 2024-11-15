@@ -43,31 +43,17 @@
       "Age": "23"
     },
     {
-      "id": "8",
-      "name": "Masinde",
-      "image": "https://i.pinimg.com/474x/9d/a3/1f/9da31f6b5db405fe5a4a0873da96c106.jpg",
-      "Age": "25"
-    },
-    {
-      "id": "6f39",
-      "name": "Sharon",
-      "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._ZVxmqZDM421cxqq6u_hgAHaHa%26pid%3DApi&sp=1728840948T5b011520ab9621c0c15bac3b84074d63d1fe67725d945a5698320eb9c1c36414",
-      "price": "",
-      "Age": "24"
-    },
-    {
-      "id": "e726",
-      "name": "Absalom",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQECAwj/xAA8EAABAwMCBQEGAwYEBwAAAAABAAIDBAURBiESMUFRYRMHFCJxgZGhwfAVIzJCseEzYnPRJDVDUoKSk//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAQACAgICAgIDAAAAAAAAAAABAgMREiExQQRREyIycZH/2gAMAwEAAhEDEQA/ALxREQEREBEWHdLhDa6KSrqTiNmPqScAfiotaKxuRmIoNZvaLS3GvfTzU/u7AcBxfnbupu1wcAQQQeRCzx56ZN8Z8IiYnw7IiLVIix66sgoKWSqqpWxQxN4nvdyAUF057QKi9apZQe6xR0U5cIs549ml2SeW+OX6MTaIRMxCwkXGVypSIiICIiAiIgIiICIiAoz7RYBVaRuEJa8ucGlnA3OHBwIz2G3NSZdXta9pa4AtIwQRkFVvXlWYRPcafOlKx8NS0QhjC3+bj4nnwTsPsArC0rqqaglFFWepJBtwk82t8fLsoXqVklLra40VI1lJTwyNEVPGzhY1vCNwB1PPPlcvbOxzZnn44zxB2cbdfw3+i8S9rY8nU9ubc1st+9autVohhkle+cyjLWwAOIHc5Ix2XWxaxtF8qZKajklZMxhk4ZmcOQOeN+irfU8jJdLNqonZlY9mS3qDsfpuD9FBqKtma+odFO+ImFzCWuwTx7EfLGfoCvQwfJtlrylp+SUt1xqWq1JdnUNHLxUEUhbEI+T8fznv4W59m",
-      "price": "",
-      "Age": "24"
-    },
-    {
       "id": "a852",
       "name": "Macdonald",
       "image": "https://i.pinimg.com/474x/52/a3/f5/52a3f515950ecdcfc0519e2f8eaa62ff.jpg",
       "price": "",
       "Age": "30"
+    },
+    {
+      "id": "7044",
+      "name": "Sharon ",
+      "image": "https://i.pinimg.com/474x/6e/2f/b9/6e2fb9ae888fb107a33fbade162702ff.jpg",
+      "age": "10"
     }
   ]
 }
