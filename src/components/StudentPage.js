@@ -8,13 +8,13 @@ function StudentPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/Class Mates")
+    fetch("https://sharondb.onrender.com/ClassMates")
       .then((response) => response.json())
       .then((data) => setStudents(data));
   }, []);
 
   const addStudent = (newStudent) => {
-    fetch("http://localhost:3000/Class Mates", {
+    fetch("https://sharondb.onrender.com/ClassMates", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newStudent),
@@ -24,7 +24,7 @@ function StudentPage() {
   };
 
   const updateStudent = (updatedStudent) => {
-    fetch(`http://localhost:3000/Class Mates/${updatedStudent.id}`, {
+    fetch(`https://sharondb.onrender.com/ClassMates${updatedStudent.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedStudent),
@@ -40,7 +40,7 @@ function StudentPage() {
   };
 
   const deleteStudent = (id) => {
-    fetch(`http://localhost:3000/Class Mates/${id}`, {
+    fetch(`https://sharondb.onrender.com/ClassMates${id}`, {
       method: "DELETE",
     }).then(() => setStudents(students.filter((student) => student.id !== id)));
   };
